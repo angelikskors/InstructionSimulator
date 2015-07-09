@@ -1,0 +1,54 @@
+.welcome-label{
+    -fx-font-size: 30pt;
+    -fx-font-style: italic;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 700;
+}
+.title{
+    -fx-font-size: 30pt;
+    -fx-font-style: normal;
+    -fx-text-fill:  #008080;
+    -fx-font-weight: bold;
+}
+.title:hover{
+    -fx-font-weight: bold;
+    -fx-font-fill: black;
+}
+
+.welcome-label:hover{
+    -fx-text-fill: navy;
+}
+.background {
+    -fx-background-color: linear-gradient(to bottom,white 70%, #5CACEE );
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-min-height: 70px;
+    -fx-min-width: 170px;
+    -fx-background-border-radius:30;
+    -fx-background-border-radius-width:5;
+    -fx-background-border-radius-color:black;
+    -fx-background-radius: 30;
+    -fx-background-color: #E6E6FA;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-style: italic;
+    -fx-font-size: 17pt;
+    -fx-text-fill: #000080;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #5CACEE;-fx-text-fill: #d8d8d8;
+}
+
+.label-text {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+
+    -fx-text-fill:  #2F4F4F;
+    -fx-text-origin: bottom;
+}
+
+.background-for-text {
+    -fx-background-color: white;
+}

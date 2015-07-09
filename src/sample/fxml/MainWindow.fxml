@@ -1,0 +1,76 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="sample.controllers.MainWindowController" styleClass="background"
+            stylesheets="@../css/style.css">
+    <top>
+        <HBox alignment="CENTER" spacing="20">
+            <children>
+                <ImageView fx:id="skype" layoutX="100" fitHeight="98" fitWidth="95">
+                    <image>
+                        <Image url="@../views/skype.png"/>
+                    </image>
+                </ImageView>
+                <Label text=" Make your family closer "
+                       BorderPane.alignment="CENTER" styleClass="welcome-label" stylesheets="@../css/style.css">
+                    <font>
+                        <Font name="System Bold Italic"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="20.0">
+            <children>
+                <Button text="Info " onAction="#handleShowInfo" styleClass="button" stylesheets="@../css/style.css"/>
+                <Button text="Benchmark data " onAction="#handleShowInputData" styleClass="button" stylesheets="@../css/style.css"/>
+                <Button text="Algorithms " onAction="#handleShowAlgoritms" styleClass="button" stylesheets="@../css/style.css"/>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox spacing="20.0">
+            <children>
+                <ImageView fx:id="imgSon" layoutX="29.0" layoutY="44.0" fitHeight="224.0" fitWidth="400.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../views/imgSon.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+    </right>
+    <center>
+        <ImageView fx:id="imgMom" layoutX="29.0" layoutY="44.0" fitHeight="224.0" fitWidth="400.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../views/imgMom.png"/>
+            </image>
+        </ImageView>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER">
+            <children>
+                <Button text="Start "  onAction="#handleStart"  styleClass="button"  stylesheets="@../css/style.css" />
+            </children>
+        </VBox>
+    </bottom>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</BorderPane>

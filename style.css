@@ -1,0 +1,33 @@
+.my-button {
+    -fx-min-height: 70px;
+    -fx-min-width: 150px;
+    -fx-font: 17pt "Times New Roman";
+    -fx-effect: dropshadow(gaussian, gray, 1, 1.0, 1, 1);
+}
+.my-button-choice {
+    -fx-min-height: 70px;
+    -fx-min-width: 200px;
+    -fx-font: 17pt "Times New Roman";
+    -fx-effect: dropshadow(gaussian, gray, 1, 1.0, 1, 1);
+}
+
+.my-button-count {
+    -fx-min-height: 70px;
+    -fx-min-width: 110px;
+    -fx-font: 17pt "Times New Roman";
+    -fx-effect: dropshadow(gaussian, gray, 1, 1.0, 1, 1);
+
+}
+
+.my-error-label{
+    -fx-font: 17pt "Times New Roman";
+}
+.my-button-little-search {
+    -fx-min-height: 40px;
+    -fx-min-width: 70px;
+    -fx-alignment: center;
+    -fx-font: 17pt "Times New Roman";
+    -fx-effect: dropshadow(gaussian, gray, 1, 1.0, 1, 1);
+
+}
+

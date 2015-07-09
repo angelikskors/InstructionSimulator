@@ -1,0 +1,38 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox fx:controller="sample.controllers.DataController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <children>
+        <TableView fx:id="equipment">
+            <columns>
+                <TableColumn >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="generalName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn >
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <HBox spacing="6">
+            <children>
+                <Button text="Create" onAction="#handleCreateAction"/>
+                <Button text="Update" onAction="#handleUpdateAction"/>
+                <Button text="Remove" onAction="#handleDeleteAction"/>
+            </children>
+            <padding>
+                <javafx.geometry.Insets top="6" left="6" right="6" bottom="6"/>
+            </padding>
+        </HBox>
+    </children>
+    <padding>
+        <javafx.geometry.Insets top="6" left="6" right="6" bottom="6"/>
+    </padding>
+</VBox>
