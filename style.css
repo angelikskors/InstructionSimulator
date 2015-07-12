@@ -1,8 +1,15 @@
-.my-button {
-    -fx-min-height: 70px;
+.button {
+    -fx-text-fill: #000000;
+    -fx-font-size: 17pt;
+    -fx-min-height: 50px;
     -fx-min-width: 150px;
-    -fx-font: 17pt "Times New Roman";
-    -fx-effect: dropshadow(gaussian, gray, 1, 1.0, 1, 1);
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-effect: dropshadow(gaussian, #696969, 1, 1.0, 1, 1);
+}
+
+.button:hover {
+    -fx-background-color: #000000;
+    -fx-text-fill: #d8d8d8;
 }
 .my-button-choice {
     -fx-min-height: 70px;
@@ -19,8 +26,11 @@
 
 }
 
-.my-error-label{
-    -fx-font: 17pt "Times New Roman";
+.error {
+
+    -fx-font-size: 14pt;
+    -fx-text-fill: #800000;
+    -fx-text-origin: bottom;
 }
 .my-button-little-search {
     -fx-min-height: 40px;
@@ -31,3 +41,43 @@
 
 }
 
+.background {
+    -fx-background-color: linear-gradient(to bottom, white 70%, #778899);
+}
+
+.label-big {
+    -fx-font-size: 50pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 700;
+}
+
+.label-little {
+    -fx-font-size: 26pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #000080;
+    -fx-font-weight: 700;
+}
+
+.background-error {
+    -fx-background-color: white;
+}
+
+.background-advice {
+    -fx-background-color: linear-gradient(to bottom, white 70%, #FFFF00);
+}
+
+.label-advice {
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #191970;
+    -fx-text-origin: bottom;
+}
+
+.background-for-text {
+    -fx-background-color: white;
+}
+
+.background-algorithm {
+    -fx-background-color: #87CEFA;
+}

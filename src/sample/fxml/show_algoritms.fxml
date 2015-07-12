@@ -13,25 +13,31 @@
             prefHeight="400.0"
             prefWidth="800.0"
             xmlns="http://javafx.com/javafx/8"
-            fx:controller="sample.controllers.AlgoritmsController" styleClass="background"
+            fx:controller="sample.controllers.AlgoritmsController" styleClass="background-algorithm" fx:id="vBox"
             stylesheets="@../css/style.css">
     <top>
     </top>
     <left>
         <VBox spacing="20.0">
             <children>
-                <Button text="Current  " onAction="#handleCurrent" styleClass="button" stylesheets="@../css/style.css"/>
-                <Button text="Preventing problems №1 " onAction="#handleFirst" styleClass="button" stylesheets="@../css/style.css"/>
-                <Button text="Preventing problems №2 " onAction="#handleSecond" styleClass="button" stylesheets="@../css/style.css"/>
+                <Button text="Algorithm " onAction="#handleCurrent" styleClass="button-algorithm"
+                        stylesheets="@../css/style.css"/>
+                <Button text="Actions" onAction="#handleFirst" styleClass="button" stylesheets="@../css/style.css"/>
+
             </children>
         </VBox>
     </left>
     <right>
         <VBox spacing="20.0">
             <children>
-                <ImageView fx:id="imageView" layoutX="29.0" layoutY="44.0" fitHeight="224.0" fitWidth="400.0" pickOnBounds="true"
+                <ImageView fx:id="imageView" pickOnBounds="true"
                            preserveRatio="true">
-
+                    <image>
+                        <Image url="@../views/algorithm.png"/>
+                    </image>
+                    <image>
+                        <Image url="@../views/preventiveAct.png"/>
+                    </image>
                 </ImageView>
             </children>
         </VBox>
