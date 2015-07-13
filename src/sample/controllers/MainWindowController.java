@@ -57,23 +57,24 @@ public class MainWindowController {
 
     @FXML
     public void handleShowAlgoritms(ActionEvent actionEvent) {
-//        ResourceBundle resources = FXMLHelper.resources();
-//        FXMLLoader loader = FXMLHelper.loader("fxml/show_algoritms.fxml", resources);
-//
-//        Parent root = null;
-//        try {
-//            root = loader.load();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-        Image image = new Image("file:algorithm.png");
-        AlgoritmsController startScreen = new AlgoritmsController();
+        ResourceBundle resources = FXMLHelper.resources();
+        FXMLLoader loader = FXMLHelper.loader("fxml/show_algoritms.fxml", resources);
 
-        Scene scene = new Scene(startScreen, 2000, 1000);
-        thisStage = new Stage();
-        thisStage.setScene(scene);
-        thisStage.show();
-        // showNewWindow("Algoritms", root,2000,1000);
+        Parent root = null;
+        try {
+            root = loader.load();
+            showNewWindow("Algoritms", root, 1500, 700);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        Image image = new Image("file:algorithm.png");
+//        AlgoritmsController startScreen = new AlgoritmsController();
+//
+//        Scene scene = new Scene(startScreen, 2000, 1000);
+//        thisStage = new Stage();
+//        thisStage.setScene(scene);
+        //      thisStage.show();
+
 
     }
 
@@ -123,5 +124,18 @@ public class MainWindowController {
         }
         showNewWindow("Information", root,500,350);
 
+    }
+
+    public void handlePreventive(ActionEvent actionEvent) {
+        ResourceBundle resources = FXMLHelper.resources();
+        FXMLLoader loader = FXMLHelper.loader("fxml/show_preventiveAct.fxml", resources);
+
+        Parent root = null;
+        try {
+            root = loader.load();
+            showNewWindow("Prevent", root, 1070, 600);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

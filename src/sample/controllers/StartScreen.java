@@ -83,11 +83,25 @@ public class StartScreen extends VBox {
             sendMMS.getStyleClass().add("button");
             sendMMS.setAlignment(Pos.BOTTOM_LEFT);
             sendMMS.setText("Send MMS");
+            if (stageCount == 0) {
+                sendMMS.setVisible(false);
+            }
             sendMMS.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
-                    Image image1 = new Image("file:count.png");
-                    createImageWindow(image1, "The MMS is sent");
+                    if (stageCount == 1) {
+                        Image image1 = new Image("file:first.png");
+                        createImageWindow(image1, "The MMS is sent");
+                    } else if (stageCount == 2) {
+                        Image image1 = new Image("file:second.png");
+                        createImageWindow(image1, "The MMS is sent");
+                    } else if (stageCount == 3) {
+                        Image image1 = new Image("file:third.png");
+                        createImageWindow(image1, "The MMS is sent");
+                    } else if (stageCount == 4) {
+                        Image image1 = new Image("file:last.png");
+                        createImageWindow(image1, "The MMS is sent");
+                    }
                     answer = true;
                     momAnswer.setVisible(true);
                 }
@@ -149,11 +163,11 @@ public class StartScreen extends VBox {
     private void createImageWindow(Image image1, String message) {
         ImageView newImageView = new ImageView();
         newImageView.setImage(image1);
-        newImageView.setFitHeight(55);
-        newImageView.setFitWidth(55);
+        //newImageView.setFitHeight(100);
+        // newImageView.setFitWidth(100);
         Stage stage = new Stage();
         ImageScreen root = new ImageScreen(message, image1);
-        stage.setScene(new Scene(root, 400, 400));
+        stage.setScene(new Scene(root, 430, 295));
         stage.show();
     }
 

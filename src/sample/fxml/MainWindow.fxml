@@ -39,7 +39,9 @@
             <children>
                 <Button text="Info " onAction="#handleShowInfo" styleClass="button" stylesheets="@../css/style.css"/>
                 <Button text="Benchmark data " onAction="#handleShowInputData" styleClass="button" stylesheets="@../css/style.css"/>
-                <Button text="More " onAction="#handleShowAlgoritms" styleClass="button"
+                <Button text="Algorithm " onAction="#handleShowAlgoritms" styleClass="button"
+                        stylesheets="@../css/style.css"/>
+                <Button text="Preventive Actions " onAction="#handlePreventive" styleClass="button"
                         stylesheets="@../css/style.css"/>
             </children>
         </VBox>

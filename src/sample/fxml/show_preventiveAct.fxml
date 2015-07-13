@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.layout.HBox?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1"
             maxHeight="-Infinity"
             maxWidth="-Infinity"
@@ -14,35 +13,25 @@
             prefHeight="400.0"
             prefWidth="800.0"
             xmlns="http://javafx.com/javafx/8"
-            fx:controller="sample.controllers.AlgoritmsController" styleClass="background-algorithm"
+            fx:controller="sample.controllers.AlgoritmsController" styleClass="background-for-text"
             stylesheets="@../css/style.css">
     <top>
     </top>
-    <left>
-        <HBox spacing="10.0">
-            <children>
-                <Button text="More " onAction="#handleCurrent" styleClass="button-algorithm"
-                        stylesheets="@../css/style.css"/>
 
-            </children>
-            <padding>
-                <javafx.geometry.Insets top="6" left="6" right="6" bottom="6"/>
-            </padding>
-        </HBox>
-
-    </left>
-    <right>
-        <VBox>
+    <center>
+        <VBox spacing="20.0">
             <children>
                 <ImageView fx:id="imageView" pickOnBounds="true"
                            preserveRatio="true">
-                    <image>
-                        <Image url="@../views/algorithm.png"/>
-                    </image>
 
+                    <image>
+                        <Image url="@../views/preventiveAct.png"/>
+                    </image>
                 </ImageView>
             </children>
         </VBox>
-    </right>
-
+    </center>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
 </BorderPane>
